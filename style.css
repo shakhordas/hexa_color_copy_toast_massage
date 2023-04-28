@@ -1,0 +1,73 @@
+
+   .color_code{
+        text-align: center;
+        margin-top: 30vh;
+     }
+   #copyBtn{
+     border:0;
+     height: 40px;
+     width: 60px;
+     color: black;
+     transition: 0.3s;
+     border-radius: 8px ;
+   }
+   #copyBtn:hover{
+     background-color: green;
+     color: white;
+   }
+  input{
+    height: 40px;
+    width: 200px;
+    background: grey;
+    color: white;
+    border-radius: 8px ;
+   }
+  #btn{
+    height: 40px;
+    width: 120px;
+    border:0;
+    transition: 0.3s;
+    background-color: pink;
+    border-radius: 8px ;
+  }
+  #btn:hover{
+    background-color: orange;
+  }
+ .toast-msg{
+ 	position: fixed;
+ 	top: 2rem;
+ 	right: 2rem;
+    padding: 0.75rem 0.5rem;
+    background-color:#566f9f;
+    color: white;
+    border-radius: 0.25rem 0.25rem;
+    cursor: pointer;
+    box-shadow: 0.4px 5px 0 rgb(0,0,0,0.2);
+ }
+ .toast-msg-slid-in{
+ 	animation: toast-animation-in 0.5s ease-in;
+ }
+ .toast-msg-slid-out{
+ 	animation: toast-animation-out 0.5s ease-in;
+ }
+ @keyframes toast-animation-in{
+   from{
+    transform: translateX(200px);
+    opacity: 0;
+   }
+   to{
+    transform: translateX(0px);
+    opacity: 1;
+   }
+ }
+
+ @keyframes toast-animation-out{
+  from{
+    transform: translateX(0px);
+    opacity: 1;
+   }
+   to{
+    transform: translateX(200px);
+    opacity: 0;
+   }
+ }
